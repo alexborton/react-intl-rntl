@@ -1,0 +1,21 @@
+{
+  "displayName": {
+    "name": "NATIVE",
+    "color": "bgBlue"
+  },
+  "testPathIgnorePatterns": [
+    "/node_modules/",
+    "<rootDir>/jest/setup.js"
+  ],
+  "transform": {
+    "^.+\\.(js)$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+  },
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "preset": "jest-expo",
+  "modulePaths": ["<rootDir>"],
+  "moduleFileExtensions": ["js", "json", "jsx", "png", "tsx"],
+  "testRegex": "(/__tests__/.*|(\\.|/)(native.test|native.spec))\\.[jt]sx?$"
+}
